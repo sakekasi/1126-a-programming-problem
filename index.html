@@ -1,0 +1,36 @@
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <style>
+        body {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #sidePanel {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #currentCall {
+            position: fixed;
+            top: 150px;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <svg id="visualization"></svg>
+    <div id="sidePanel">
+        <svg id="colors"></svg>
+        <svg id="weights"></svg>
+        <pre id="currentCall"></pre>
+    </div>
+    <script src="lib/big.js"></script>
+    <script src="lib/bignumber.js"></script>
+    <script src="lib/d3.js"></script>
+    <script src="1126-recursive-instrumented.js"></script>
+    <script src="flame-graph.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
